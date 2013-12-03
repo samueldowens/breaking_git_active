@@ -7,9 +7,9 @@ d = rand(1..50).to_s
 e = rand(1..50).to_s
 
 name = a+b+c+d+e
-exec "touch #{name}.rb"
-exec "git add ."
-exec "git commit -m 'lol'"
-exec "git push origin master"
-exec "echo 'another'"
+system "touch #{name}.rb"
+system "git add ."
+system "git commit -m 'lol'"
+system "git push origin master"
+system "echo 'another'"
 end
